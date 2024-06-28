@@ -15,34 +15,37 @@
     <div id="app">
         <!-- sfondi di background -->
         <div class="green-bg"></div>
-        <!-- container per web app -->
-         <div class="container">
-            <!-- web app -->
-            <div class="web-app">
-                <!-- due sezioni col dell'app -->
-                <div class="col-sx">
-                    <!-- profilo user da inserire con js -->
-                    <header></header>
-                    <!-- notifiche -->
-                    <div></div>
-                    <!-- ricerca -->
-                    <input type="text">
-                    <!-- nav contatti -->
-                    <nav>
-                        <!-- contatti da inserire con js -->
-                    </nav>
+
+        <!-- web app -->
+        <div class="web-app">
+            <!-- due sezioni col dell'app -->
+            <div class="col-sx">
+                <!-- profilo user da inserire con js -->
+                <header></header>
+                <!-- attiva/disattiva notifiche -->
+                <div id="notifications"></div>
+                <!-- ricerca -->
+                <div id="contacts-search">
+                    <input type="text" >
                 </div>
-                <!-- colonna messaggi -->
-                <div class="col-dx">
-                    <!-- contatto con cui si sta messaggiando -->
-                    <header></header>
-                    <!-- zona chat -->
-                    <main id="main-chat"></main>
-                    <!-- zona scrittura e invio messaggi -->
-                    <div></div>
-                </div>
+                <!-- nav contatti -->
+                <nav>
+                    <!-- contatti da inserire con js -->
+                </nav>
             </div>
-         </div>
+            <!-- colonna messaggi -->
+            <div class="col-dx">
+                <!-- contatto con cui si sta messaggiando -->
+                <header></header>
+                <!-- zona chat -->
+                <main id="main-chat">
+                
+                </main>
+                <!-- zona scrittura e invio messaggi -->
+                <div id="message-bar"></div>
+            </div>
+        </div>
+        
     </div>
     <script type="text/javascript" src="js/mysript.js"></script>
 </body>

@@ -1,0 +1,73 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Lato", sans-serif;
+}
+
+
+/* regole sfondi background */
+#app {
+    height: 100vh;
+    background-color: #d5dbd7;
+    position: relative;
+}
+.green-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 150px;
+    width: 100%;
+    background-color: #009688;
+}
+
+/* regole web app */
+.web-app {
+    margin: 30px 0;
+    height: calc(100vh - 60px);
+    width: 95%;
+    max-width: 1400px;
+    position: fixed;
+    z-index: 900;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: aqua;
+    display: flex;
+}
+
+/* debug web app */
+.web-app * {
+    border: 1px solid black;
+}
+
+/* regole colonne */
+.web-app .col-sx {
+    width: 35%;
+}
+.web-app .col-dx {
+    width: 65%;
+}
+.web-app header {
+    height: 60px;
+}
+
+/* regole colonna sx */
+#notifications {
+    height: 70px;
+}
+#contacts-search {
+    height: 40px;
+}
+.web-app nav {
+    height: calc(100% - 170px);
+    overflow-y: auto;
+}
+/* regole colonna dx */
+#main-chat {
+    height: calc(100% - 120px);
+    overflow-y: auto;
+}
+#message-bar {
+    height: 60px;
+}
