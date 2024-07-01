@@ -21,11 +21,26 @@
             <!-- due sezioni col dell'app -->
             <div class="col-sx">
                 <!-- profilo user da inserire con js -->
-                <header class="userProfile">
-                
+                <header id="userProfile" class="d-flex flex-between">
+                    <!-- parte sinistra -->
+                    <div class="d-flex flex-gap-1">
+                        <div>immagine</div>
+                        <div>nome</div>
+                    </div>
+                    <!-- icone parte destra -->
+                    <div class="d-flex flex-gap-2">
+                        <i class="fa-solid fa-rotate-right"></i>
+                        <i class="fa-solid fa-message"></i>
+                        <i class="fa-solid fa-ellipsis-vertical"></i>
+                    </div>
                 </header>
                 <!-- attiva/disattiva notifiche -->
-                <div id="notifications"></div>
+                <div id="notifications" class="d-flex">
+                    <div>
+                        <i class="fa-solid fa-bell-slash"></i>
+                        <!-- <i class="fa-solid fa-bell"></i> -->
+                    </div>
+                </div>
                 <!-- ricerca -->
                 <div id="contacts-search">
                     <input type="text" >
@@ -38,7 +53,22 @@
             <!-- colonna messaggi -->
             <div class="col-dx">
                 <!-- contatto con cui si sta messaggiando -->
-                <header></header>
+                <header class="d-flex flex-between">
+                    <!-- parte sinistra -->
+                    <div class="d-flex flex-gap-1">
+                        <div>immagine</div>
+                        <div>
+                            <div>nome</div>
+                            <div>ultimo accesso</div>
+                        </div>
+                    </div>
+                    <!-- icone parte destra -->
+                    <div class="d-flex flex-gap-2">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                        <i class="fa-solid fa-paperclip"></i>
+                        <i class="fa-solid fa-ellipsis-vertical"></i>
+                    </div>
+                </header>
                 <!-- zona chat -->
                 <main id="main-chat">
                 
