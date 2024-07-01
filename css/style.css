@@ -46,7 +46,7 @@
     margin: 30px 0;
     height: calc(100vh - 60px);
     width: 95%;
-    max-width: 1400px;
+    max-width: 1500px;
     position: fixed;
     z-index: 900;
     top: 0;
@@ -85,31 +85,52 @@
     width: 65%;
     border-left: 1px solid #b7b7b774;
 }
+
+/* regole header web app */
 .web-app header {
     height: 60px;
-    background-color: #e1fcff7f;
+    background-color: #e0eff07f;
     padding: 0 1rem;
 }
 
 /* regole colonna sx */
-#notifications {
-    height: 70px;
-    padding: 0 1rem;
-}
-#contacts-search {
-    height: 40px;
-}
-.web-app nav {
-    height: calc(100% - 170px);
-    overflow-y: auto;  
-}
-.contacts {
-    height: 70px;
-    border-top: 1px solid #b7b7b774;
-    padding: 0.5rem 1rem; 
-    display: flex;
-    align-items: start;
-}
+    /* regole notifiche */
+    #notifications {
+        height: 70px;
+        padding: 0 1rem;
+    }
+
+    /* regole barra ricerca */
+    #contacts-search {
+        height: 40px;
+        padding: 0.3rem;
+        background-color: #e0eff07f;
+    }
+    #search-bar {
+        width: 100%;
+        height: 100%;
+    }
+
+    /* regole nav contatti */
+    #nav-contacts {
+        max-height: calc(100% - 170px);
+        overflow-y: auto; 
+        list-style: none; 
+    }
+    .contacts {
+        height: 70px;
+        border-top: 1px solid #b7b7b774;
+        padding: 0.5rem 1rem; 
+        display: flex;
+        align-items: start;
+        transition: all 150ms ease;
+    }
+    .contacts:hover{
+        background-color: #e0eff07f;
+    }
+    .contacts.active{
+        background-color: #ced3d3cb;
+    }
 /* regole colonna dx */
 #main-chat {
     height: calc(100% - 120px);
@@ -118,5 +139,5 @@
 }
 #message-bar {
     height: 60px;
-    background-color: #e1fcff7f;
+    background-color: #e0eff07f;
 }

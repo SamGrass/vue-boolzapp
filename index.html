@@ -45,11 +45,11 @@
                 </div>
                 <!-- ricerca -->
                 <div id="contacts-search">
-                    <input type="text" >
+                    <input id="search-bar" type="text" >
                 </div>
                 <!-- nav contatti -->
-                <nav>
-                    <div class="contacts flex-gap-1 flex-between" v-for="(contact, index) in contacts" :key="index">
+                <ul id="nav-contacts">
+                    <li class="contacts flex-gap-1 flex-between" v-for="(contact, index) in contacts" :key="index">
                         <!-- parte sinistra -->
                         <div class="d-flex flex-gap-1 flex-items-start flex-self-center">
                             <div>
@@ -64,10 +64,8 @@
                         <div class="d-flex flex-gap-2">
                             <div>ultimo accesso</div>
                         </div>
-                    </div>
-                    
-                    <!-- contatti da inserire con js -->
-                </nav>
+                    </li>
+                </ul>
             </div>
             <!-- colonna messaggi -->
             <div class="col-dx">
