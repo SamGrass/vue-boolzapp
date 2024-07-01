@@ -20,7 +20,12 @@
 .flex-gap-2 {
     gap: 1rem;
 }
-
+.flex-items-start {
+    align-items: start;
+}
+.flex-self-center {
+    align-self: center;
+}
 /* regole sfondi background */
 #app {
     height: 100vh;
@@ -96,7 +101,14 @@
 }
 .web-app nav {
     height: calc(100% - 170px);
-    overflow-y: auto;
+    overflow-y: auto;  
+}
+.contacts {
+    height: 70px;
+    border-top: 1px solid #b7b7b774;
+    padding: 0.5rem 1rem; 
+    display: flex;
+    align-items: start;
 }
 /* regole colonna dx */
 #main-chat {

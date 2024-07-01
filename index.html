@@ -49,6 +49,23 @@
                 </div>
                 <!-- nav contatti -->
                 <nav>
+                    <div class="contacts flex-gap-1 flex-between" v-for="(contact, index) in contacts" :key="index">
+                        <!-- parte sinistra -->
+                        <div class="d-flex flex-gap-1 flex-items-start flex-self-center">
+                            <div>
+                                <img class="round-frame" :src="contact.avatar" :alt="contact.name">
+                            </div>
+                            <div>
+                                <div>{{contact.name}}</div>
+                                <div>ultimo messaggio</div>
+                            </div>  
+                        </div>
+                        <!-- icone parte destra -->
+                        <div class="d-flex flex-gap-2">
+                            <div>ultimo accesso</div>
+                        </div>
+                    </div>
+                    
                     <!-- contatti da inserire con js -->
                 </nav>
             </div>
@@ -58,7 +75,9 @@
                 <header class="d-flex flex-between">
                     <!-- parte sinistra -->
                     <div class="d-flex flex-gap-1">
-                        <div>immagine</div>
+                        <div>
+                            <!-- <img class="round-frame" :src="" :alt=""> -->
+                        </div>
                         <div>
                             <div>nome</div>
                             <div>ultimo accesso</div>
