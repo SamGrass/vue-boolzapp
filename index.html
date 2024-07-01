@@ -24,8 +24,10 @@
                 <header id="userProfile" class="d-flex flex-between">
                     <!-- parte sinistra -->
                     <div class="d-flex flex-gap-1">
-                        <div>immagine</div>
-                        <div>nome</div>
+                        <div>
+                            <img class="round-frame" :src="user.avatar" :alt="user.name">
+                        </div>
+                        <div>{{user.name}}</div>
                     </div>
                     <!-- icone parte destra -->
                     <div class="d-flex flex-gap-2">
