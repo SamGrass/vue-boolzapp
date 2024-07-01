@@ -90,7 +90,9 @@
                 </header>
                 <!-- zona chat -->
                 <main id="main-chat">
-                
+                    <ul class="chat-container" v-for="userChat in contacts">
+                        <li v-for="(chat, index) in userChat.messages" :key="index"><span>{{chat.message}}</span></li>
+                    </ul>
                 </main>
                 <!-- zona scrittura e invio messaggi -->
                 <div id="message-bar"></div>

@@ -132,12 +132,20 @@
         background-color: #ced3d3cb;
     }
 /* regole colonna dx */
-#main-chat {
-    height: calc(100% - 120px);
-    overflow-y: auto;
-    background-image: url(../img/chat-bg.jpg);
-}
-#message-bar {
-    height: 60px;
-    background-color: #e0eff07f;
-}
+
+    /* regole chat */
+    #main-chat {
+        height: calc(100% - 120px);
+        overflow-y: auto;
+        background-image: url(../img/chat-bg.jpg);
+    }
+    .chat-container {
+        width: 80%;
+        margin: 0.5rem auto;
+    }
+
+    /* regole message bar */
+    #message-bar {
+        height: 60px;
+        background-color: #e0eff07f;
+    }

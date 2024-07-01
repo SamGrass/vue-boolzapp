@@ -3,10 +3,12 @@ const { createApp } = Vue
   createApp({
     data() {
       return {
+        // oggetto user
         user: {
           name: 'Samuele',
           avatar: './img/profile-pic-main-1.jpg'
         },
+        // array con dati di tutti i contatti 
         contacts: [
           {
               name: 'Michele',
