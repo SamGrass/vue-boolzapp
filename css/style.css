@@ -32,14 +32,15 @@
     top: 0;
     left: 50%;
     transform: translateX(-50%);
-    background-color: aqua;
+    background-color: #fff;
     display: flex;
+    box-shadow: 0 0 1rem 0.2rem #2b2b2b5a;
 }
 
 /* debug web app */
-.web-app * {
+/* .web-app * {
     border: 1px solid black;
-}
+} */
 
 /* regole colonne */
 .web-app .col-sx {
@@ -47,9 +48,11 @@
 }
 .web-app .col-dx {
     width: 65%;
+    border-left: 1px solid #b7b7b774;
 }
 .web-app header {
     height: 60px;
+    background-color: #e1fcff7f;
 }
 
 /* regole colonna sx */
@@ -67,7 +70,9 @@
 #main-chat {
     height: calc(100% - 120px);
     overflow-y: auto;
+    background-image: url(../img/chat-bg.jpg);
 }
 #message-bar {
     height: 60px;
+    background-color: #e1fcff7f;
 }
