@@ -3,6 +3,10 @@ const { createApp } = Vue
   createApp({
     data() {
       return {
+        // input searchbar
+        inputSearchContacts: '',
+        // active contact
+        active: false,
         // oggetto user
         user: {
           name: 'Samuele',
@@ -174,5 +178,12 @@ const { createApp } = Vue
       ]
       
       }
-    }
+    }, methods: {
+        activeContact() {
+            this.contacts.visible = true 
+            if (this.contacts.visible = true) {
+                this.active = true
+            }  
+        }
+    },
   }).mount('#app')

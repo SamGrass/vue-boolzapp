@@ -46,13 +46,13 @@
                 <!-- ricerca -->
                 <div id="contacts-search">
     
-                    <input id="search-bar" value="" class="text-bar" type="text">
+                    <input id="search-bar" value="" class="text-bar" type="text" placeholder="Cerca tra i tuoi contatti" v-model="inputSearchContacts">
                     <i class="fa-solid fa-magnifying-glass"></i>
                     
                 </div>
                 <!-- nav contatti -->
                 <ul id="nav-contacts">
-                    <li class="contacts flex-gap-1 flex-between" v-for="(contact, index) in contacts" :key="index">
+                    <li class="contacts flex-gap-1 flex-between" :class="{active}" @click="activeContact" v-for="(contact, index) in contacts" :key="index">
                         <!-- parte sinistra -->
                         <div class="d-flex flex-gap-1 flex-items-start flex-self-center">
                             <div>
@@ -93,9 +93,12 @@
                 </header>
                 <!-- zona chat -->
                 <main id="main-chat">
-                    <ul class="chat-container" v-for="userChat in contacts">
-                        <li v-for="(chat, index) in userChat.messages" :key="index"><span>{{chat.message}}</span></li>
-                    </ul>
+                    <div v-if="contacts.visible === true">
+                        <ul class="chat-container" v-for="userChat in contacts">
+                            <li v-for="(chat, index) in userChat.messages" :key="index"><span>{{chat.message}}</span></li>
+                        </ul>
+                    </div>
+                    
                 </main>
                 <!-- zona scrittura e invio messaggi -->
                 <div id="message-section" class=" d-flex flex-between">
