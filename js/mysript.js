@@ -6,7 +6,7 @@ const { createApp } = Vue
         // input searchbar
         inputSearchContacts: '',
         // active contact
-        activeContact: 0,
+        activeContact: 0, 
         // oggetto user
         user: {
           name: 'Samuele',
@@ -175,16 +175,13 @@ const { createApp } = Vue
                   }
               ],
           }
-      ]
-      
+      ],
       }
     }, methods: {
+        // clicco su un contatto per renderlo attivo tramite index
         selectActiveContact(index) {
             this.activeContact = index; 
-            console.log(index); 
-            console.log(this.contacts[this.activeContact].messages);
-        }
-    }, mounted() {
-        
-    },
+            
+        },
+    }, 
   }).mount('#app')

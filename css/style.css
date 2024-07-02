@@ -154,6 +154,30 @@
     .chat-container {
         width: 80%;
         margin: 0.5rem auto;
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+    }
+    .text-chat {
+        padding: 1rem;
+        width: 40%;
+        border-radius: 1em;
+        margin-bottom: 0.5rem;
+        display: flex;
+        flex-direction: column;
+    }
+    .user-chat {
+        background-color: #d5f9ba;
+        align-self: flex-end;
+    }
+    .contact-chat {
+        background-color: #fff;
+    }
+    .chat-date {
+        align-self: flex-end;
+        font-size: 0.7rem;
+        color: #9a9a9a;
+        margin-top: 0.5rem;
     }
 
     /* regole message bar */

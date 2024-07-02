@@ -46,7 +46,7 @@
                 <!-- ricerca -->
                 <div id="contacts-search">
     
-                    <input id="search-bar" value="" class="text-bar" type="text" placeholder="Cerca tra i tuoi contatti" v-model="inputSearchContacts">
+                    <input id="search-bar" value="" class="text-bar" type="text" placeholder="Cerca tra i tuoi contatti" v-model="inputSearchContacts" >
                     <i class="fa-solid fa-magnifying-glass"></i>
                     
                 </div>
@@ -80,7 +80,7 @@
                             <!-- <img class="round-frame" :src="" :alt=""> -->
                         </div>
                         <div>
-                            <div>nome</div>
+                            <div>{{contacts[activeContact].name}}</div>
                             <div>ultimo accesso</div>
                         </div>
                     </div>
@@ -95,7 +95,10 @@
                 <main id="main-chat">
                     <div >
                         <ul class="chat-container">
-                            <li  v-for="chat in contacts[activeContact].messages">{{chat.message}}</li>
+                            <li class="text-chat" :class="chat.status === 'received' ? 'contact-chat' : 'user-chat'" v-for="chat in contacts[activeContact].messages">
+                                <span>{{chat.message}}</span>
+                                <span class="chat-date">{{chat.date}}</span>
+                            </li>
                         </ul>
                     </div>
                     
