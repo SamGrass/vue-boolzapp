@@ -6,7 +6,7 @@ const { createApp } = Vue
         // input searchbar
         inputSearchContacts: '',
         // active contact
-        active: false,
+        activeContact: 0,
         // oggetto user
         user: {
           name: 'Samuele',
@@ -179,11 +179,12 @@ const { createApp } = Vue
       
       }
     }, methods: {
-        activeContact() {
-            this.contacts.visible = true 
-            if (this.contacts.visible = true) {
-                this.active = true
-            }  
+        selectActiveContact(index) {
+            this.activeContact = index; 
+            console.log(index); 
+            console.log(this.contacts[this.activeContact].messages);
         }
+    }, mounted() {
+        
     },
   }).mount('#app')
